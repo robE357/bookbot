@@ -1,3 +1,5 @@
+from stats import get_book_count
+
 def char_count(characters):
     char_dict = {}
     for i in characters:
@@ -7,9 +9,6 @@ def char_count(characters):
             char_dict[i.lower()] += 1
     return char_dict
 
-def get_book_count(book):
-    words = book.split()
-    return len(words)
 
 
 def report(book_name,text, char_dict):
